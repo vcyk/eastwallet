@@ -1,0 +1,13 @@
+{
+    "name": "eastwallet",
+    "version": "1.0.0",
+    "description": "An NPM dist of EastWallet. For easier downloading & updating via CLI.",
+    "author": "East Coin",
+    "license": "MIT",
+    "devDependencies": {
+        "open": "0.0.5"
+    },
+    "bin": {
+        "mew": "bin/startEW.js"
+    }
+}
