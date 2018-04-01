@@ -8,8 +8,11 @@ Thumbs.db
 
 node_modules/
 deploy/
-json_relay_node/node_modules/
-dist/node_modules/
+dist/
+chrome-extension/
+json_relay_node/
+json_relay_php/
+node_modules/
 _ens/
 *.zip
 cert.pem
