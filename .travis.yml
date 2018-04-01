@@ -16,7 +16,7 @@ script:
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_488cecd7e0e0_key -iv $encrypted_488cecd7e0e0_iv -in east.gpg.enc -out east.gpg -d
 - mkdir deploy
-- gpg --allow-secret-key-import --import mew.gpg
+- gpg --allow-secret-key-import --import east.gpg
 - gulp travisZip
 - |
   for f in deploy/*; do
