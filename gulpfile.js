@@ -73,11 +73,11 @@ gulp.task('html', function(done) {
 
 // styles: Compile and Minify Less / CSS Files
 let less_watchFolder = app + 'styles/**/*.less';
-let less_srcFile = app + 'styles/etherwallet-master.less';
+let less_srcFile = app + 'styles/eastwallet-master.less';
 let less_destFolder = dist + 'css';
 let less_destFolder_CX = dist_CX + 'css';
-let less_destFile = 'etherwallet-master.css';
-let less_destFileMin = 'etherwallet-master.min.css';
+let less_destFile = 'eastwallet-master.css';
+let less_destFileMin = 'eastwallet-master.min.css';
 
 gulp.task('styles', function() {
     return gulp.src(less_srcFile)
@@ -100,7 +100,7 @@ let js_watchFolder = app + 'scripts/**/*.{js,json,html}';
 let js_srcFile = app + 'scripts/main.js';
 let js_destFolder = dist + 'js/';
 let js_destFolder_CX = dist_CX + 'js/';
-let js_destFile = 'etherwallet-master.js';
+let js_destFile = 'eastwallet-master.js';
 let browseOpts = { debug: true }; // generates inline source maps - only in js-debug
 let babelOpts = {
     presets: ['es2015'],
@@ -151,7 +151,7 @@ gulp.task('js-debug', function() {
 // Rebuild Static JS
 let js_srcFilesStatic = app + 'scripts/staticJS/to-compile-to-static/*.js';
 let js_destFolderStatic = app + 'scripts/staticJS/';
-let js_destFileStatic = 'etherwallet-static.min.js';
+let js_destFileStatic = 'eastwallet-static.min.js';
 
 gulp.task('staticJS', function() {
     return gulp.src(js_srcFilesStatic)
@@ -257,9 +257,9 @@ gulp.task('zip', ['getVersion'], function() {
     gulp.src(dist + '**/**/*')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(rename(function (path) {
-          path.dirname = './etherwallet-' + versionNum + '/' + path.dirname;
+          path.dirname = './eastwallet-' + versionNum + '/' + path.dirname;
         }))
-        .pipe(zip('./etherwallet-' + versionNum + '.zip'))
+        .pipe(zip('./eastwallet-' + versionNum + '.zip'))
         .pipe(gulp.dest('./releases/'))
         .pipe(notify(onSuccess('Zip Dist ' + versionNum)));
     return gulp.src(dist_CX + '**/**/*')
@@ -308,9 +308,9 @@ gulp.task('travisZip', ['getVersion'], function() {
     gulp.src(dist + '**/**/*')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(rename(function (path) {
-          path.dirname = './etherwallet-' + versionNum + '/' + path.dirname;
+          path.dirname = './eastwallet-' + versionNum + '/' + path.dirname;
         }))
-        .pipe(zip('./etherwallet-' + versionNum + '.zip'))
+        .pipe(zip('./eastwallet-' + versionNum + '.zip'))
         .pipe(gulp.dest('./deploy/'))
         .pipe(notify(onSuccess('Zip Dist ' + versionNum)));
     return gulp.src(dist_CX + '**/**/*')

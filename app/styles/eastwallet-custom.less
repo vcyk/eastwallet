@@ -123,7 +123,7 @@ textarea {
   .text-width-limit{
     display: grid;
     grid-auto-rows: 1fr;
-    
+
     p{
       margin: 0;
       white-space: nowrap;
@@ -476,7 +476,7 @@ label small {
 
 
   .btn-red {
-    
+
     background-color: #84023d;
     border-color: #84023d;
     position: relative;
@@ -496,7 +496,7 @@ label small {
     border-color: #84023d;
     position: relative;
   }
-  
+
 
   .pad-bot {
     padding-bottom: 5px;
@@ -580,17 +580,7 @@ label small {
 }
 
 // color code the nodes
-@brand-eth: @brand-primary;
-@brand-etc: #009241;
-@brand-test: #adc101;
-@brand-rsk: #ff794f;
-@brand-exp: #673ab7;
-@brand-music: #b37aff;
-@brand-ubq: #00ad85;
-@brand-poa: #4568bb;
-@brand-tomo: #6a488d;
-@brand-ella: #046111;
-@brand-etsc: #673ab7;
+@brand-ether: @brand-primary;
 @brand-cust: #b50085;
 
 .dropdown-node .dropdown-menu {
@@ -602,52 +592,13 @@ label small {
     border-top: 1px solid @gray-lighter;
     padding-top: 5px;
   }
-  li:nth-child(1),
-  li:nth-child(2),
-  li:nth-child(3),
-  li:nth-child(4){
-    border-left: 2px solid @brand-eth;
-  }
-  li:nth-child(5) {
-    border-left: 2px solid @brand-etc;
-  }
-  li:nth-child(6),
-  li:nth-child(7),
-  li:nth-child(8),
-  li:nth-child(9),
-  li:nth-child(10),
-  li:nth-child(11) {
-    border-left: 2px solid @brand-test;
-  }
-  li:nth-child(12) {
-    border-left: 2px solid @brand-exp;
-  }
-  li:nth-child(13) {
-    border-left: 2px solid @brand-ubq;
-  }
-  li:nth-child(14) {
-    border-left: 2px solid @brand-poa;
-  }
-  li:nth-child(15) {
-    border-left: 2px solid @brand-tomo;
-  }
-  li:nth-child(16) {
-    border-left: 2px solid @brand-ella;
-  }
-  li:nth-child(17) {
-    border-left: 2px solid @brand-etsc;
+  li:nth-child(1){
+    border-left: 2px solid @brand-ether;
   }
   li:last-child {
     border-left: 2px solid @gray-light;
   }
-  li:nth-child(4),
-  li:nth-child(5),
-  li:nth-child(11),
-  li:nth-child(12),
-  li:nth-child(13),
-  li:nth-child(14),
-  li:nth-child(15),
-  li:nth-child(16) {
+  li:nth-child(1) {
     border-bottom: 1px solid @gray-lighter;
   }
 }
@@ -655,93 +606,9 @@ label small {
 header {
   margin-bottom: 1em;
 }
-header.ETH {
-  .nav-container                         { border-top: 0.25rem solid @brand-eth;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-eth;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-eth;      }
-  & + .container .alert-info             { background-color:@brand-eth;           }
-}
-
-header.ETC {
-  .nav-container                         { border-top: 0.25rem solid @brand-etc;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-etc;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-etc;      }
-  & + .container .alert-info             { background-color:@brand-etc;           }
-}
-
-header.Ropsten {
-  .nav-container                         { border-top: 0.25rem solid @brand-test; }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-test; }
-  & + .container .modal-content          { border: 0.25rem solid @brand-test;     }
-  & + .container .alert-info             { background-color:@brand-test;          }
-}
-
-header.Kovan {
-  .nav-container                         { border-top: 0.25rem solid @brand-test; }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-test; }
-  & + .container .modal-content          { border: 0.25rem solid @brand-test;     }
-  & + .container .alert-info             { background-color:@brand-test;          }
-}
-
-header.Rinkeby {
-  .nav-container                         { border-top: 0.25rem solid @brand-test; }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-test; }
-  & + .container .modal-content          { border: 0.25rem solid @brand-test;     }
-  & + .container .alert-info             { background-color:@brand-test;          }
-}
-
-header.RSK {
-  .nav-container                         { border-top: 0.25rem solid @brand-rsk;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-rsk;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-rsk;      }
-  & + .container .alert-info             { background-color: @brand-rsk;          }
-}
-
-header.Custom {
-  .nav-container                         { border-top: 0.25rem solid @brand-cust; }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-cust; }
-  & + .container .modal-content          { border: 0.25rem solid @brand-cust;     }
-  & + .container .alert-info             { background-color:@brand-cust;          }
-}
-
-header.EXP {
-  .nav-container                         { border-top: 0.25rem solid @brand-exp;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-exp;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-exp;      }
-  & + .container .alert-info             { background-color:@brand-exp;           }
-}
-
-header.UBQ {
-  .nav-container                         { border-top: 0.25rem solid @brand-ubq;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-ubq;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-ubq;      }
-  & + .container .alert-info             { background-color:@brand-ubq;           }
-}
-
-header.POA {
-  .nav-container                         { border-top: 0.25rem solid @brand-poa;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-poa;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-poa;      }
-  & + .container .alert-info             { background-color:@brand-poa;           }
-}
-
-header.TOMO {
-  .nav-container                         { border-top: 0.25rem solid @brand-tomo;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-tomo;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-tomo;      }
-  & + .container .alert-info             { background-color:@brand-tomo;           }
-}
-
-header.ELLA {
-  .nav-container                         { border-top: 0.25rem solid @brand-ella;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-ella;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-ella;      }
-  & + .container .alert-info             { background-color:@brand-ella;           }
-}
-
-header.ETSC {
-  .nav-container                         { border-top: 0.25rem solid @brand-etsc;  }
-  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-etsc;  }
-  & + .container .modal-content          { border: 0.25rem solid @brand-etsc;      }
-  & + .container .alert-info             { background-color:@brand-etsc;           }
+header.ether {
+  .nav-container                         { border-top: 0.25rem solid @brand-ether;  }
+  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-ether;  }
+  & + .container .modal-content          { border: 0.25rem solid @brand-ether;      }
+  & + .container .alert-info             { background-color:@brand-ether;           }
 }

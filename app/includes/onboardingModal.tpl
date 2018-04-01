@@ -10,7 +10,7 @@
         <article class="onboarding__modal" ng-show="showOnboardSlide==1">
           <h3 class="onboarding__title">
             <span translate="ONBOARD_welcome_title">
-              Welcome to MyEtherWallet.com
+              Welcome to East Wallet!
             </span>
             <br />
             <small translate="ONBOARD_welcome_content__3">
@@ -35,7 +35,7 @@
               </h5>
               <ul>
                 <li translate="ONBOARD_welcome_content__5">
-                  MyEtherWallet is a free, open-source, client-side interface.
+                  EastWallet is a free, open-source, client-side interface.
                 </li>
                 <li translate="ONBOARD_welcome_content__6">
                   We allow you to interact directly with the blockchain while remaining in full control of your keys &amp; your funds.
@@ -53,7 +53,7 @@
           <div class="onboarding__buttons text-center">
             <a ng-click="setOnboardStatus(2)" class="btn btn-primary">
               <span translate="ONBOARD_bank_title">
-                MyEtherWallet is not a Bank
+                EastWallet is not a Bank
               </span>
             </a>
           </div>
@@ -62,7 +62,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==2">
           <h3 class="onboarding__title" translate="ONBOARD_bank_title">
-            MyEtherWallet is not a Bank
+            EastWallet is not a Bank
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -96,7 +96,7 @@
             </a>
             <a ng-click="setOnboardStatus(3)" class="btn btn-primary">
               <span translate="ONBOARD_interface_title">
-                MyEtherWallet is an Interface
+                EastWallet is an Interface
               </span>
             </a>
           </div>
@@ -105,7 +105,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==3">
           <h3 class="onboarding__title" translate="ONBOARD_interface_title">
-            MyEtherWallet is an Interface
+            EastWallet is an Interface
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -174,10 +174,10 @@
                   It is stored and maintained by thousands of people (miners) across the globe who have special computers.
                 </li>
                 <li translate="ONBOARD_blockchain_content__4">
-                  It is made up of all the individual transactions sent from MyEtherWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.
+                  It is made up of all the individual transactions sent from EastWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.
                 </li>
                 <li translate="ONBOARD_blockchain_content__5">
-                  When you see your balance on MyEtherWallet.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.
+                  When you see your balance on EastWallet or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.
                 </li>
                 <li translate="ONBOARD_blockchain_content__6">
                    Again: <strong>we are not a bank</strong>.
@@ -265,7 +265,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==6">
           <h3 class="onboarding__title" translate="ONBOARD_whymew_title">
-            If MyEtherWallet can't do those things, what's the point?
+            If EastWallet can't do those things, what's the point?
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -314,19 +314,19 @@
             How To Protect Yourself from Phishers
           </h3>
           <p translate="ONBOARD_secure_1_content__1">
-            Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.
+            Phishers send you a message with a link to a website that looks just like EastWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.
           </p>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-8 onboarding__content">
               <ul>
                 <li translate="ONBOARD_secure_1_content__2">
-                  Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.
+                  Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [EastWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.
                 </li>
                 <li translate="ONBOARD_secure_1_content__3">
                   Always check the URL: `https://www.myetherwallet.com`.
                 </li>
                 <li translate="ONBOARD_secure_1_content__4">
-                  Always make sure the URL bar has `MYETHERWALLET LLC` in green.
+                  Always make sure the URL bar has `EastWallet`.
                 </li>
                 <li translate="ONBOARD_secure_1_content__5">
                   Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.

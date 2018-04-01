@@ -1,13 +1,13 @@
 {
-    "name": "MyEtherWallet",
+    "name": "eastwallet",
     "version": "3.20.02",
-    "description": "An NPM dist of MyEtherWallet. For easier downloading & updating via CLI.",
-    "author": "MyEtherWallet",
-    "license": "ISC",
+    "description": "An NPM dist of EastWallet. For easier downloading & updating via CLI.",
+    "author": "East Coin",
+    "license": "MIT",
     "devDependencies": {
         "open": "0.0.5"
     },
     "bin": {
-        "mew": "bin/startMEW.js"
+        "mew": "bin/startEW.js"
     }
 }

@@ -10,7 +10,7 @@
         <p class="small"><a href="https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
 
         <div ng-show="browserProtocol=='https:'" class="alert alert-danger small" translate="NODE_Warning">
-          Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can [download the MyEtherWallet repo & run it locally](https://github.com/kvhnuke/etherwallet/releases/latest) to connect to your local node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
+          Your node must be HTTPS in order to connect to it via EastWallet. You can [download the EastWallet repo & run it locally](https://github.com/east-coin/eastwallet/releases/latest) to connect to your local node. Or, get free SSL connection via [Cloudflare](https://cloudflare.com/)</a>.
         </div>
 
         <section class="row">
@@ -18,7 +18,7 @@
             <label translate="NODE_Name">Node Name</label>
             <input class="form-control"
                    type="text"
-                   placeholder="My ETH Node"
+                   placeholder="My EAST Node"
                    ng-model="customNode.name"
                    ng-class="Validator.isAlphaNumericSpace(customNode.name) ? 'is-valid' : 'is-invalid'">
           </div>
@@ -48,11 +48,6 @@
           </div>
 
           <div class="clearfix col-xs-12 radio">
-            <label><input name="options" type="radio" ng-model="customNode.options" value="eth"> ETH </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="etc"> ETC </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="rop"> Ropsten </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
             <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>

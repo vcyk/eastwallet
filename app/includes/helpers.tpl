@@ -1,11 +1,11 @@
 <div class="" ng-controller="helpersCtrl">
 
   <h1>
-    Convert Ethererum Units (e.g. Ether <-> Wei)
+    Convert Eastcoin Units (e.g. EAST <-> Wei)
   </h1>
 
   <h2 class="p">
-    Ether Wei Converter
+    East Wei Converter
   </h2>
 
   <section class="mono">
@@ -70,7 +70,7 @@
       <input class="form-control" type="text" ng-model="units.ether" ng-change="convertUnit('ether')" />
       <div class="input-group-btn">
         <a class="btn btn-primary" style="min-width: 170px;">
-          ether
+          EAST (ether)
         </a>
       </div>
     </div>

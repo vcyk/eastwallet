@@ -2,14 +2,14 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>MyEtherWallet.com</title>
-  <link rel="canonical" href="https://www.myetherwallet.com" />
-  <meta name="description" content="MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( myetherwallet.com ) before unlocking your wallet.">
+  <title>East Web Wallet</title>
+  <link rel="canonical" href="https://wallet.easthub.io" />
+  <meta name="description" content="East Wallet is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( wallet.easthub.io ) before unlocking your wallet.">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/etherwallet-master.min.css">
-  <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
-  <script type="text/javascript" src="js/etherwallet-master.js"></script>
+  <link rel="stylesheet" href="css/eastwallet-master.min.css">
+  <script type="text/javascript" src="js/eastwallet-static.min.js"></script>
+  <script type="text/javascript" src="js/eastwallet-master.js"></script>
   <link rel="apple-touch-icon" sizes="60x60" href="images/fav/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="images/fav/apple-touch-icon-120x120.png">
@@ -32,6 +32,6 @@
 
 <header class="bg-gradient text-white">
 <section class="container text-center">
-  <a href="https://www.myetherwallet.com/"><img src="images/logo-myetherwallet.svg" height="50px" width="auto" alt="Ether Wallet" class="embedded-logo" /></a>
+  <a href="https://wallet.easthub.io/"><img src="images/eastwallet-logo.png" height="50px" width="auto" alt="Ether Wallet" class="embedded-logo" /></a>
 </section>
 </header>

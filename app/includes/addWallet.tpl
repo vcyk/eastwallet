@@ -189,7 +189,7 @@
         </h4>
 
         <p class="text-danger" translate="ADD_Warning_1">
-          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer Ether from it.
+          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer EAST from it.
         </p>
 
         <div class="form-group">
@@ -312,7 +312,7 @@
           <strong>
             {{etherBalance}}
           </strong>
-          ETH
+          EAST
         </li>
       </ul>
 
@@ -351,10 +351,10 @@
       </h5>
       <ul class="account-info">
         <li>
-          <a href="https://etherscan.io/address/{{wallet.getAddressString()}}"
+          <a href="https://explorer.easthub.io/addr/{{wallet.getAddressString()}}"
              target="_blank"
              rel="noopener noreferrer">
-               https://etherscan.io/address/ {{wallet.getAddressString()}}
+               https://explorer.easthub.io/addr/ {{wallet.getAddressString()}}
           </a>
         </li>
       </ul>
@@ -461,13 +461,13 @@
                   <span ng-bind="HDWallet.defaultDPath"></span>
                 </label>
               </td>
-              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (ETH)</td>
+              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (EAST)</td>
             </tr>
 
             <tr>
               <td>
                 <label class="radio">
-                  <input aria-describedby="Path: Ledger (ETH) {{HDWallet.ledgerPath}}"
+                  <input aria-describedby="Path: Ledger (EAST) {{HDWallet.ledgerPath}}"
                          ng-change="onHDDPathChange()"
                          ng-model="HDWallet.dPath"
                          type="radio"
@@ -475,7 +475,7 @@
                   <span ng-bind="HDWallet.ledgerPath"></span>
                 </label>
               </td>
-              <td> Ledger (ETH)</td>
+              <td> Ledger (EAST)</td>
             </tr>
 
             <tr>
@@ -602,15 +602,6 @@
                      target="_blank"
                      rel="noopener noreferrer">
                   {{wallet.getBalance()}} {{nodeType}}
-                </a>
-              </td>
-
-              <td class="text-center">
-                <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     title="https://ethplorer.io/address/{{wallet.getAddressString()}}">
-                  <img src="images/icon-external-link.svg" title="https://ethplorer.io/address/{{wallet.getAddressString()}}" ng-click="removeTokenFromLocal(token.symbol)" ng-show="token.type!=='default'" />
                 </a>
               </td>
 

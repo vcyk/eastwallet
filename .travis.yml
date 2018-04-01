@@ -30,7 +30,7 @@ deploy:
   file: deploy/*
   skip_cleanup: true
   on:
-    repo: kvhnuke/etherwallet
+    repo: east-coin/eastwallet
     branch: mercury
     tags: true
 notifications:

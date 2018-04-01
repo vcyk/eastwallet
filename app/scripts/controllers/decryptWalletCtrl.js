@@ -129,7 +129,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             $scope.scanDigitalBitbox();
         } else if ($scope.walletType == 'secalot') {
             $scope.scanSecalot();
-        }        
+        }
     }
     $scope.onCustomHDDPathChange = function() {
         $scope.HDWallet.dPath = $scope.HDWallet.customDPath;
@@ -194,7 +194,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             } else if ($scope.walletType == "digitalBitbox") {
                 $scope.HDWallet.wallets.push(new Wallet(undefined, derivedKey.publicKey, $scope.HDWallet.dPath + "/" + i, $scope.walletType, $scope.digitalBitbox));
             } else if ($scope.walletType == "secalot") {
-                $scope.HDWallet.wallets.push(new Wallet(undefined, derivedKey.publicKey, $scope.HDWallet.dPath + "/" + i, $scope.walletType, $scope.secalot));                
+                $scope.HDWallet.wallets.push(new Wallet(undefined, derivedKey.publicKey, $scope.HDWallet.dPath + "/" + i, $scope.walletType, $scope.secalot));
             } else {
                 $scope.HDWallet.wallets.push(new Wallet(undefined, derivedKey.publicKey, $scope.HDWallet.dPath + "/" + i, $scope.walletType));
             }
@@ -320,7 +320,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             $scope.HWWalletCreate(result['publicKey'], result['chainCode'], "secalot", $scope.HDWallet.dPath);
         } else
             $scope.notifier.danger(error);
-    }    
+    }
     $scope.scanLedger = function() {
         $scope.ledgerError = false;
         $scope.ledger = new Ledger3("w0w");
@@ -342,7 +342,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         var app = new SecalotEth($scope.secalot, $scope.HDWallet.secalotSecret);
         var path = $scope.HDWallet.dPath;
         app.getAddress(path, $scope.secalotCallback);
-    };    
+    };
     $scope.scanTrezor = function() {
         // trezor is using the path without change level id
         var path = $scope.getTrezorPath();
