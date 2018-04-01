@@ -1,10 +1,10 @@
 {
-  "name": "mew-custom",
+  "name": "eastwallet",
   "version": "1.1.0",
   "description": "",
   "main": "gulpfile.js",
-  "author": "MyEtherWallet",
-  "license": "ISC",
+  "author": "East Coin",
+  "license": "MIT",
   "scripts": {
     "dev": "gulp",
     "dist": "gulp prep",
