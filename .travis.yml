@@ -14,7 +14,7 @@ before_script: npm install -g gulp
 script:
 - gulp prep
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_85fecf66b314_key -iv $encrypted_85fecf66b314_iv -in mew.gpg.enc -out mew.gpg -d
+- openssl aes-256-cbc -K $encrypted_488cecd7e0e0_key -iv $encrypted_488cecd7e0e0_iv -in east.gpg.enc -out east.gpg -d
 - mkdir deploy
 - gpg --allow-secret-key-import --import mew.gpg
 - gulp travisZip
@@ -25,7 +25,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: NYFD7bSlHoGA/UahbPs8r8vKf5CAz78e4HFJyXsFGQN4oC1xc6TCl578WzUbahBCfgjeKOMKoG7eOQYPoPkgoX8Q62jDdPAIuC90dGpaPeYjoKZcESAI18kZHHsX3QWzUVxG83qjv4XD3ReoBdFzHqsR3FnPh3j1AdMCrIOHHuBViAARWPK+FvXyxRyiUYrAPr/Pemv8A8hroOm2KPhDVFfHBC9tOtoOeqiuvULlwoSnt9VWe4Uj80B+JB0wPmYbWs/K8jrq8iRfJTRMGdIaAulnxPGvG7Yl+0Zq8wCqz8ogZu5E5YxSxGT/2aU6xmBRThCsXR+bz0dHAou6t12GfJXo2EIBkSFXBk2lCu4mCrwFMIHOHjt0EACHTxdK8v564ec2Wa6Tfk3y+QGyhocSCBkyLwGLFFXflWWqwEYoAcZEc+A9AzolLboIT99XKaB/ofBNa7m7LL72Lg9crGMVcDIM/ilN87l3Osiy80rCXyJAkoOVeIhhd2f2wNybN0f0AMtHj8O1dio2IOqnRMmx4yEEbeIvLG30AiAkw0OI/DpAj0V1ZPWJh1a1KgUlSgvVKO+POI9bwZ3mKe81eiE/fhizNT4rEgN4qhyfXe0aV04Ox47Y2wxpxU+5MSltvRhvt3Ml/Q4RL1Ti4j0ewRQasD85lqO49wzGkpsjqJme6BQ=
+    secure: kravLuO8x9ITp3bD/TSr89HX5530NPFi8+cq5uL0Q24s2zj+QW2RQFWmQWljJSre+z7D1WTtu/HuiPK1aJ7pjrEkl3E8kf1oi4HdZIMaNKeKXWqeIDYfwKHM+25oXAAEZSyw7FuLgBDjPBhKrFLuFGoSUXqBuap/77FbPqXdBk2cHLz0vmYTskFw7SLOiXW4Cqz+DyfvuB2nDKtvYQ58DZSrv1posVCxjWTW5abCa+uJFpqsyLGVs0GrSN93xWgLQi2sNkF5s2PPIdjp0aVJ+PIkd5x9otYrGjlD8Z7JnyOFbtH/ZDgCfxuTTJmn0s2I58dI5uLNgOgtp119TtiVjCsvW1HN3yIoVhsTRsRhsQJF5KPM76rIPnlyuUyi1FK1RmPH0RxPM5vt0zOXdfPDAeRP3+5MmETrxpm9wRCRVEO31tCMY+JGPhZD0opdALS3l4++z5WFwo1hxnpd1tfixzitBl9LgUaAzO8jYW4oeomnlPfQkmPH2GwJuY2RfHQsqv8TZh2uz4qxEgDN+F5Bc4ILS0QRhSIhwszdMY51xXuOyppdi4JVVmSlaLxVwgXUepJOTds7UDBTNFUK3Sjg+ubG382shh9CF5ulxKU3u6epOA/TDzGq7pWFK0kkXmhbYJpMMbWnsf7PNBvF5mMAxwZJKZ0uCjcloRlEvAy3ro8=
   file_glob: true
   file: deploy/*
   skip_cleanup: true
