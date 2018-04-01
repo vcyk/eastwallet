@@ -31,5 +31,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: east-coin/eastwallet
-    branch: mercury
+    branch: master
     tags: true

@@ -357,11 +357,11 @@ gulp.task('tag', ['getVersion'], function() {
         .pipe(notify(onSuccess('Tagged Commit' + versionMsg)))
 });
 
-// Push Release to Mercury
+// Push Release to Master
 gulp.task('push', ['getVersion'], function() {
     return gulp.src('*.js', { read: false })
         .pipe(shell([
-            'git push origin mercury ' + versionNum
+            'git push origin master ' + versionNum
         ]))
         .pipe(notify(onSuccess('Push')))
 });
