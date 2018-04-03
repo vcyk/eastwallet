@@ -1,6 +1,6 @@
 {
     "name": "eastwallet",
-    "version": "3.20.02",
+    "version": "1.0.0",
     "description": "An NPM dist of EastWallet. For easier downloading & updating via CLI.",
     "author": "East Coin",
     "license": "MIT",
