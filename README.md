@@ -11,10 +11,10 @@
 ### East Coin Websites
 
 - [EASThub Homepage](http://www.easthub.io)
-- [Github EAST Repo](https://github.com/east-coin)
-- [Github EAST Wallet Repo](https://github.com/east-coin/eastwallet)
+- [Github EAST Repo](https://github.com/vcyk)
+- [Github EAST Wallet Repo](https://github.com/vcyk/eastwallet)
 - [Github Pages URL](https://east-coin.github.io/eastwallet)
-- [Github Latest Releases](https://github.com/east-coin/eastwallet/releases/latest)
+- [Github Latest Releases](https://github.com/vcyk/eastwallet/releases/latest)
 -  EAST ETH Donation Address: TBA
 -  EAST BTC Donation Address: TBA
 
